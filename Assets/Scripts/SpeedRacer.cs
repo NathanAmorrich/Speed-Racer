@@ -76,7 +76,7 @@ public class SpeedRacer : MonoBehaviour
             else
             {
              
-                return "This car is not a sedan and has no front engine"; ;
+                return "This car is not a sedan and has no front engine";
 
             }
         }
