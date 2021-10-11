@@ -238,6 +238,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337bdcf9f01273449a5beb2e9a3f2e65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carModel: Huracan Evo
+  engineType: Naturally Aspirated V10
+  carMaker: Lamborghini
+  carWeight: 1665
+  yearMade: 2019
+  carAge: 0
+  maxAcceleration: 1.06
+  isCarTypeSedan: 0
+  hasFrontEngine: 0
 --- !u!65 &1298447475
 BoxCollider:
   m_ObjectHideFlags: 0
