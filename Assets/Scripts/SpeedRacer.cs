@@ -120,30 +120,24 @@ public class SpeedRacer : MonoBehaviour
             //print("The car was introduced in the 2010's");
             CarAge_txt.text = "The car was introduced in the 2010's";
 
-<<<<<<< Updated upstream
-            print("The car's maximum acceleration is " + maxAcceleration);
-=======
             //print("The car's maximum acceleration is " +maxAcceleration+ "m/s^2");
             CarMaxAccell_txt.text = "The car's maximum acceleration is " + maxAcceleration + "m/s^2";
->>>>>>> Stashed changes
-        }
 
+        }
 
         //print(CheckCharacteristics());
         CheckCharacteristics();
-
-        
 
     }
 
     void CheckWeight()
     {
-        if(carWeight < 1500)
+        if (carWeight < 1500)
         {
             //print("The car weights LESS than 1500kg");
             CarWeight_txt.text = "The car weights LESS than 1500kg";
         }
-        else 
+        else
         {
             //print("The car weights MORE than 1500kg");
             CarWeight_txt.text = "The car weights MORE than 1500kg";
@@ -158,7 +152,7 @@ public class SpeedRacer : MonoBehaviour
     string CheckCharacteristics()
     {
 
-        if(isCarTypeSedan)
+        if (isCarTypeSedan)
         {
             CarType_txt.text = "This car is a sedan";
             return "This car is a sedan";
@@ -167,7 +161,7 @@ public class SpeedRacer : MonoBehaviour
         else
         {
 
-            if(hasFrontEngine)
+            if (hasFrontEngine)
             {
                 CarType_txt.text = "This car is not a sedan but it has a front engine";
                 return "This car is not a sedan but it has a front engine";
@@ -181,7 +175,7 @@ public class SpeedRacer : MonoBehaviour
 
             }
         }
-        
+
     }
 
     public void OnClickDecreaseFuel()
@@ -192,16 +186,11 @@ public class SpeedRacer : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-<<<<<<< Updated upstream
     {
-=======
-    {   
         if (Input.GetKeyDown(KeyCode.Space))
         {
             ConsumeFuel();
             CheckFuelLevel();
         }
->>>>>>> Stashed changes
-
     }
 }
