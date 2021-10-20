@@ -5,16 +5,7 @@ using System.Collections.Generic;
 
 public class SpeedRacer : MonoBehaviour
 {
-<<<<<<< Updated upstream
-    string carModel = "GTR R35";
-    string engineType = "V6, Twin Turbo";
-    int carWeight = 1609;
-    int yearMade = 2009;
-    int carAge = 0;
-    float maxAcceleration = 0.98f;
-    bool isCarTypeSedan = false;
-    bool hasFrontEngine = true;
-=======
+
     public string carModel = "Huracan Evoby";
     public string engineType = "Naturally Aspirated V10";
     public string carMaker = "Lamborghini";
@@ -62,7 +53,7 @@ public class SpeedRacer : MonoBehaviour
     {
         carFuel.fuelLevel -= 10;
     }
-   
+
     void CheckFuelLevel()
     {
         switch (carFuel.fuelLevel)
@@ -88,21 +79,14 @@ public class SpeedRacer : MonoBehaviour
                 break;
         }
     }
->>>>>>> Stashed changes
-
-
 
     // Start is called before the first frame update.
     void Start()
     {
-<<<<<<< Updated upstream
-        print("The car model is "+carModel+" and has a "+engineType);
-       
-=======
+
         //print("The car model is "+carModel+" from "+carMaker+" and has a "+engineType+" engine.");
-        CarIntro_txt.text = "The car model is "+carModel+" from "+carMaker+" and has a "+engineType+" engine.";
-        
->>>>>>> Stashed changes
+        CarIntro_txt.text = "The car model is " + carModel + " from " + carMaker + " and has a " + engineType + " engine.";
+
         CheckWeight();
 
         if (yearMade <= 2009)
